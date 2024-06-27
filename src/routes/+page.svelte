@@ -1,24 +1,22 @@
 <script>
-    export let form, data
+  export let form, data
 </script>
-<h1>Cica {data.x}</h1>
 
-<form method=POST>
-    <input type="text" name="x">
-    <input type="submit">
-</form>
+<template lang="pug">
+h1 Cica {data.x}
+form(method='POST')
+  input(type="text" name="x")
+  input(type="submit")
 
-<h2>{Number(form?.y || 0) * 2}</h2>
+h2 {Number(form?.y || 0) * 2}
+</template>
 
-<style lang="scss">
-    h1, h2 {
-        color: aliceblue;
-    }
-    form {
-        input {
-            border: 1px solid rgb(119, 95, 95);
-            border-radius: 5px;
-            padding: 5px;
-        }
-    }
+<style lang="sass">
+h1, h2 
+  color: aliceblue
+form 
+  input 
+    border: 1px solid rgb(119, 95, 95)
+    border-radius: 5px
+    padding: 5px
 </style>

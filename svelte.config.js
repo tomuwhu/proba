@@ -1,5 +1,6 @@
 import adapter from '@sveltejs/adapter-netlify';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import { sveltePreprocess } from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -9,7 +10,9 @@ const config = {
 			split: false
 		})
 	},
-	preprocess: [vitePreprocess()]
-};
+	preprocess: [
+		sveltePreprocess({})
+	]
+}
 
 export default config;
