@@ -1,7 +1,7 @@
 <script lang="ts">
   export let form:object, data:object
   var l:string = "cica"
-  function f(c:string) { l = l + c }
+  function f(c:string) { l += c }
 </script>
 
 <template lang="pug">
