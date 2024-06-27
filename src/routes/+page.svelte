@@ -7,7 +7,7 @@
 <template lang="pug">
 h1 Cica {data.x}
 form(method='POST')
-  input(type="text" name="x")
+  input(type="text", name="x")
   input(type="submit")
 h2 {Number(form?.y || 0) * 2}
 +each('l as c') 
