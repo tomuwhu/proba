@@ -1,5 +1,5 @@
-<script>
-  export let form, data
+<script lang="ts">
+  export let form:object, data:object
 </script>
 
 <template lang="pug">
