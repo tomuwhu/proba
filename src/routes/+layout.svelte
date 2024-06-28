@@ -1,5 +1,7 @@
 <template lang="pug">
-div(class="menu") Menu 
+div(class="menu") 
+  a(href="/") Kezdőoldal
+  a(href="/amoba") Amőba
 br
 div(class="content") 
   slot
@@ -14,6 +16,9 @@ div.content
   padding: 20px
 div.menu 
   background-color: black
+  color: white
+  padding: 10px
+a, a:visited
   color: white
   padding: 10px
 </style>
